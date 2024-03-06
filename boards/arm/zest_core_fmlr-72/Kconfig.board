@@ -1,0 +1,8 @@
+# Zest Core FMLR-72 board configuration
+
+# Copyright (c) 2024 CATIE
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD_ZEST_CORE_FMLR-72
+	bool "Zest Core FMLR-72 Development Board"
+	depends on SOC_STM32L071XX
