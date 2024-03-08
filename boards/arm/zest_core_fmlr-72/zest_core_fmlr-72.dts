@@ -111,3 +111,29 @@
 	 cs-gpios = <&gpiob 2 GPIO_ACTIVE_LOW>;
 	 status = "okay";
  };
+ 
+ stm32_lp_tick_source: &lptim1 {
+	 /*
+	  * LSI freq is 37KHz but stm32_lptim driver is using 32000Hz
+	  * resulting in time running 1.13 faster than reality
+	  */
+	 clocks = <&rcc STM32_CLOCK_BUS_APB1 0x80000000>,
+		 <&rcc STM32_SRC_LSI LPTIM1_SEL(1)>;
+	 status = "okay";
+ };
+ 
+ &timers3 {
+	 status = "okay";
+ };
+ 
+ &timers6 {
+	 status = "okay";
+ };
+ 
+ &timers7 {
+	 status = "okay";
+ };
+ 
+ &timers22 {
+	 status = "okay";
+ };
