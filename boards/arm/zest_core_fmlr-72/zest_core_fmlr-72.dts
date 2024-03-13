@@ -95,6 +95,7 @@
 		 compatible = "semtech,sx1272";
 		 reg = <0x0>;
 		 reset-gpios = <&gpioc 2 GPIO_ACTIVE_LOW>;
+		 antenna-enable-gpios = <&gpiob 12 GPIO_ACTIVE_HIGH>;
 		 dio-gpios = <&gpioa 1 (GPIO_PULL_DOWN | GPIO_ACTIVE_HIGH)>,
 					 <&gpioa 6 (GPIO_PULL_DOWN | GPIO_ACTIVE_HIGH)>,
 					 <&gpioa 7 (GPIO_PULL_DOWN | GPIO_ACTIVE_HIGH)>,
