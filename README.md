@@ -44,4 +44,4 @@ See [STMicroelectronics vendor bindings](https://docs.zephyrproject.org/latest/b
 
 1. Add the Zest_Core_FMLR-72 board to your workspace using the [6TRON module](https://github.com/catie-aq/zephyr_6tron-manifest.git).
 2. Compile and flash application using `west` tool:
-   - Board name: `zest_core_stm32l562ve`
+   - Board name: `zest_core_fmlr-72`
