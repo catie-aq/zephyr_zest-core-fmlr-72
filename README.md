@@ -26,7 +26,7 @@ The Zephyr Zest_Core_FMLR-72 board configuration supports the following hardware
 | LPUART    | on-chip                                                                     | serial                                         |
 | NVIC      | on-chip                                                                     | arch/arm                                       |
 | PINCTRL   | on-chip                                                                     | pinctrl                                        |
-| RTC       | git push -u origin mainon-chip                                              | rtc                                            |
+| RTC       | on-chip                                                                     | rtc                                            |
 | SMBUS     | on-chip                                                                     | smbus                                          |
 | SPI       | on-chip                                                                     | spi                                            |
 | TIMER     | on-chip                                                                     | counter, pwm, timer                            |
