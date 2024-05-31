@@ -12,7 +12,7 @@
 #include "sixtron_connector.dtsi"
 
 / {
-	model = "CATIE Zest Core FMLR-72 board";
+	model = "CATIE Zest_Core_FMLR-72 board";
 	compatible = "catie,zest-core-fmlr-72";
 
 	chosen {
