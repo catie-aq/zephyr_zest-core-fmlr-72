@@ -16,7 +16,7 @@ The Zephyr Zest_Core_FMLR-72 board configuration supports the following hardware
 | ADC       | on-chip                                                                     | adc                                            |
 | AES       | on-chip                                                                     | crypto                                         |
 | CLOCK     | on-chip                                                                     | clock_control                                  |
-| DAC       | on-chip                                                                     | dac                                            |                                        |
+| DAC       | on-chip                                                                     | dac                                            |
 | DMA       | on-chip                                                                     | dma                                            |
 | EXTI      | on-chip                                                                     | interrupt_controller                           |
 | FLASH     | on-chip                                                                     | flash                                          |
@@ -25,14 +25,14 @@ The Zephyr Zest_Core_FMLR-72 board configuration supports the following hardware
 | LPTIM     | on-chip                                                                     | timer                                          |
 | LPUART    | on-chip                                                                     | serial                                         |
 | NVIC      | on-chip                                                                     | arch/arm                                       |
-| PINCTRL   | on-chip                                                                     | pinctrl                                        |                                        |
-| RTC       | git push -u origin mainon-chip                                                                     | rtc                                            |                                           |
+| PINCTRL   | on-chip                                                                     | pinctrl                                        |
+| RTC       | git push -u origin mainon-chip                                              | rtc                                            |
 | SMBUS     | on-chip                                                                     | smbus                                          |
 | SPI       | on-chip                                                                     | spi                                            |
 | TIMER     | on-chip                                                                     | counter, pwm, timer                            |
 | UART      | on-chip                                                                     | serial                                         |
 | USART     | on-chip                                                                     | serial                                         |
-| USB       | [FT232RQ](https://ftdichip.com/products/ft232rq/) | console                                        |                                      |
+| USB       | [FT232RQ](https://ftdichip.com/products/ft232rq/)                           | console                                        |
 | VBAT      | on-chip                                                                     | sensor                                         |
 | VREF      | on-chip                                                                     | sensor                                         |
 | IWDG      | on-chip                                                                     | watchdog                                       |
