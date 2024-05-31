@@ -5,7 +5,6 @@
  */
 
 /dts-v1/;
-// #include <st/l0/stm32l0.dtsi>
 #include <st/l0/stm32l071.dtsi>
 #include <st/l0/stm32l071Xb.dtsi>
 #include <st/l0/stm32l071r(b-z)tx-pinctrl.dtsi>
