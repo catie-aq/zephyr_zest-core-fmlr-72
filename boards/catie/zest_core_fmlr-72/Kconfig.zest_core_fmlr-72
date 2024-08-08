@@ -1,0 +1,5 @@
+# Copyright (c) 2024 CATIE
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD_ZEST_CORE_FMLR-72
+	select SOC_STM32L071XX
