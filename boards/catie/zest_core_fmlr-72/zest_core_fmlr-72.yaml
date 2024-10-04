@@ -1,0 +1,20 @@
+identifier: zest_core_fmlr-72
+name: Zest_Core_FMLR-72
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+ram: 20
+flash: 192
+supported:
+  - gpio
+  - i2c
+  - spi
+  - pwm
+  - counter
+  - lora
+testing:
+  ignore_tags:
+    - net
+vendor: catie
