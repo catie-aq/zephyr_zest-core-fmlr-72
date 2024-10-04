@@ -1,0 +1,14 @@
+name: "Zephyr Zest_Core_FMLR-72 CI/CD"
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  board-test:
+    uses: catie-aq/zephyr_workflows/.github/workflows/board.yml@main
+    with:
+      board: "zest_core_fmlr-72"
+
+    secrets:
+      personal_access_token: ${{ secrets.CI_6TRON_ZEPHYR_RO }}
