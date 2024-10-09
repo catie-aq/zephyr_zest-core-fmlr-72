@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  board-test:
+  board:
     uses: catie-aq/zephyr_workflows/.github/workflows/board.yml@main
     with:
       board: "zest_core_fmlr-72"
