@@ -33,7 +33,7 @@
 		compatible = "gpio-keys";
 		user_button: button {
 			label = "User Button";
-			gpios = <&gpioh 1 GPIO_ACTIVE_LOW>;
+			gpios = <&gpioh 1 GPIO_ACTIVE_HIGH>;
 			zephyr,code = <INPUT_BTN_0>;
 		};
 	};
