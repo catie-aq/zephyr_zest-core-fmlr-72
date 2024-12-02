@@ -37,6 +37,16 @@
                    <DIO12 0 &gpioc 11 0>,
                    <DIO18 0 &gpioc 12 0>;
     };
+
+    sixtron_connector_1_pwm: sixtron-connector-1-pwm {
+        compatible = "sixtron-pwm";
+        #pwm-cells = <3>;
+        pwm-map-mask = <0xffffffff 0x0 0x0>;
+        pwm-map-pass-thru = <0x0 0xffffffff 0x0f>;
+        pwm-map = <PWM1 0 0 &pwm3 1 0 0>,
+                  <PWM2 0 0 &pwm2 1 0 0>,
+                  <PWM3 0 0 &pwm22 2 0 0>;
+    };
 };
 
 sixtron_connector_1_i2c: &i2c1 {};
@@ -46,5 +56,6 @@ sixtron_connector_1_spi: &spi1 {};
 sixtron_i2c: &sixtron_connector_1_i2c {};
 sixtron_uart: &sixtron_connector_1_uart {};
 sixtron_spi: &sixtron_connector_1_spi {};
+sixtron_pwm: &sixtron_connector_1_pwm {};
 
 sixtron_connector: &sixtron_connector_1 {};
