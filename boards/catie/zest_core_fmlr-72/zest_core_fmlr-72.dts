@@ -123,8 +123,26 @@ stm32_lp_tick_source: &lptim1 {
 	status = "okay";
 };
 
+&timers2 {
+	status = "okay";
+	st,prescaler = <0>;
+
+	pwm2: pwm {
+		pinctrl-0 = <&tim2_ch1_pa0>;
+		pinctrl-names = "default";
+		status = "okay";
+	};
+};
+
 &timers3 {
 	status = "okay";
+	st,prescaler = <0>;
+
+	pwm3: pwm {
+		pinctrl-0 = <&tim3_ch1_pc6>;
+		pinctrl-names = "default";
+		status = "okay";
+	};
 };
 
 &timers6 {
@@ -137,4 +155,11 @@ stm32_lp_tick_source: &lptim1 {
 
 &timers22 {
 	status = "okay";
+	st,prescaler = <0>;
+
+	pwm22: pwm {
+		pinctrl-0 = <&tim22_ch2_pc7>;
+		pinctrl-names = "default";
+		status = "okay";
+	};
 };
