@@ -94,14 +94,15 @@
 	lora: sx1272@0 {
 		compatible = "semtech,sx1272";
 		reg = <0x0>;
-		reset-gpios = <&gpioc 2 GPIO_ACTIVE_LOW>;
+		reset-gpios = <&gpioc 2 GPIO_ACTIVE_HIGH>;
 		antenna-enable-gpios = <&gpiob 12 GPIO_ACTIVE_HIGH>;
 		dio-gpios = <&gpioa 1 (GPIO_PULL_DOWN | GPIO_ACTIVE_HIGH)>,
 			    <&gpioa 6 (GPIO_PULL_DOWN | GPIO_ACTIVE_HIGH)>,
 			    <&gpioa 7 (GPIO_PULL_DOWN | GPIO_ACTIVE_HIGH)>,
 			    <&gpioc 4 (GPIO_PULL_DOWN | GPIO_ACTIVE_HIGH)>,
-			    <&gpioc 5 (GPIO_PULL_DOWN | GPIO_ACTIVE_HIGH)>;
-		spi-max-frequency = <DT_FREQ_M(16)>;
+			    <&gpioc 5 (GPIO_PULL_DOWN | GPIO_ACTIVE_HIGH)>,
+			    <&gpiob 11 (GPIO_PULL_DOWN | GPIO_ACTIVE_HIGH)>;
+		spi-max-frequency = <DT_FREQ_M(3)>;
 		power-amplifier-output = "rfo";
 	};
 };
