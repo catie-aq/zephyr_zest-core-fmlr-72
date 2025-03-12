@@ -1,10 +1,11 @@
 # Zest_Core_FMLR-72
 
-[Zest_Core_FMLR-72](https://6tron.io/zest_core/zest_core_fmlr-72_1_0_0) board support for Zephyr OS.
+[Zest_Core_FMLR-72](https://6tron.io/zest_core/zest_core_fmlr_72_1_0_0) board support for Zephyr OS.
 
 ## Dependencies
 
 This module depends on:
+
 - [6TRON connector definition](https://github.com/catie-aq/zephyr_6tron-connector)
 
 ## Supported Features
