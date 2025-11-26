@@ -23,15 +23,19 @@
 
 	leds {
 		compatible = "gpio-leds";
-		led_0: led_0 {
+		led0: led_0 {
 			gpios = <&gpioh 0 GPIO_ACTIVE_HIGH>;
-			label = "User LED0";
+			label = "User LED";
+		};
+		led1: led_1 {
+			gpios = <&gpioh 0 GPIO_ACTIVE_HIGH>;
+			label = "FMLR-72 LED";
 		};
 	};
 
 	gpio_keys {
 		compatible = "gpio-keys";
-		user_button: button {
+		button0: button_0 {
 			label = "User Button";
 			gpios = <&gpioh 1 GPIO_ACTIVE_HIGH>;
 			zephyr,code = <INPUT_BTN_0>;
@@ -39,8 +43,9 @@
 	};
 
 	aliases {
-		led0 = &led_0;
-		sw0 = &user_button;
+		led0 = &led0;
+		led1 = &led1;
+		sw0 = &button0;
 		lora0 = &lora;
 		eeprom-0 = &eeprom;
 	};
