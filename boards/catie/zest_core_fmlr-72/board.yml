@@ -1,5 +1,6 @@
 board:
   name: zest_core_fmlr-72
+  full_name: Zest_Core_FMLR-72
   vendor: catie
   socs:
     - name: stm32l071xx
