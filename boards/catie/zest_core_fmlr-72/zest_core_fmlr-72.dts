@@ -181,7 +181,7 @@ stm32_lp_tick_source: &lptim1 {
 	#size-cells = <0>;
 
 	channel@8 {
-		reg = <8>;
+		reg = <0x8>;
 		zephyr,gain = "ADC_GAIN_1";
 		zephyr,reference = "ADC_REF_INTERNAL";
 		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
@@ -189,7 +189,7 @@ stm32_lp_tick_source: &lptim1 {
 	};
 
 	channel@9 {
-		reg = <9>;
+		reg = <0x9>;
 		zephyr,gain = "ADC_GAIN_1";
 		zephyr,reference = "ADC_REF_INTERNAL";
 		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
@@ -197,7 +197,7 @@ stm32_lp_tick_source: &lptim1 {
 	};
 
 	channel@11 {
-		reg = <11>;
+		reg = <0x11>;
 		zephyr,gain = "ADC_GAIN_1";
 		zephyr,reference = "ADC_REF_INTERNAL";
 		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
